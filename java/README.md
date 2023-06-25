@@ -1,5 +1,11 @@
 # Java & AsciiDoc DevContainer
 
+## WARNING
+
+このコンテナ設定はDev Containerの仕様変更に追従していません。
+
+内容を完全に変更する必要があります。
+
 ## 概要
 
 このリポジトリは、Visual Studio CodeのRemote Containerで使用する開発コンテナ設定をまとめたものです。

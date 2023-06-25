@@ -7,13 +7,15 @@
 ## ディレクトリ・ファイル構成
 
     ProjectRoot/
+    ├ asciidoctorj/
     ├ java/
     ├ LICENSE
     └ README.md
 
 |ディレクトリ・ファイル|説明|
 |:-|:-|
-|java/|Java用の開発コンテナ設定。AsciiDoc用も兼ねます。|
+|asciidoctorj/|AsciiDoctorJ用の開発コンテナ設定。|
+|java/|DEPLICATED Java用の開発コンテナ設定。AsciiDoc用も兼ねます。|
 |LICENSE|ライセンスファイル|
 |README.md|このファイル|
 

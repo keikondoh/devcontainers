@@ -1,0 +1,65 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/java
+{
+	"name": "Java",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"installZsh": true,
+			"configureZshAsDefaultShell": true,
+			"installOhMyZsh": true,
+			"upgradePackages": true,
+			"username": "automatic",
+			"userUid": "automatic",
+			"userGid": "automatic"
+		},
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "none",
+			"installMaven": "true",
+			"installGradle": "false"
+		},
+		// "ghcr.io/devcontainers-contrib/features/asciidoctorj-sdkman:2": {
+		// 	"version": "latest",
+		// 	"jdkVersion": "latest",
+		// 	"jdkDistro": "ms"
+		// },
+		"ghcr.io/devcontainers-contrib/features/exa:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/fd:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/fzf:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/ripgrep:1": {
+			"version": "latest"
+		}
+	},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "java -version",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"asciidoctor.asciidoctor-vscode",
+				"jebbs.plantuml",
+				"esbenp.prettier-vscode",
+				"mhutchie.git-graph",
+				"eamodio.gitlens"
+			]
+		}
+	}
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
